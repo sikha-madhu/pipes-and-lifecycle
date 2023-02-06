@@ -1,0 +1,9 @@
+<div class ="cointainer">
+<input type = "value" #input>
+<button (click)="OnSubmit(input)">submit</button> 
+<app-child [value] = "inputText"*ngIf="destroy">
+    <h1>projected ng-content {{inputText}} </h1>
+</app-child>
+<br><br>
+<button (click)="DestroyComponent()" >destroy</button>
+</div>
